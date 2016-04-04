@@ -3,6 +3,7 @@ FROM docker.io/library/jenkins
 USER root
 RUN apt-get update
 RUN apt-get install maven -y
+RUN apt-get install git -y
 
 #Copy local plugins.txt file for plugin installation 
 COPY files/plugins.txt /usr/share/jenkins/plugins.txt
