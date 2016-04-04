@@ -1,4 +1,4 @@
-FROM jenkins
+FROM docker.io/library/jenkins
 #Prepare environment (Install maven)
 USER root
 RUN apt-get update
